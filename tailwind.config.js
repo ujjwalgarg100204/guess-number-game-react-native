@@ -4,8 +4,13 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				maroon: "#72063c",
-				yellow: "#ddb92f",
+				primary: {
+					500: "#640233",
+					600: "#72063c",
+					700: "#4e0329",
+					800: "#3b021f",
+				},
+				accent: { 500: "#ddb92f" },
 			},
 		},
 	},
