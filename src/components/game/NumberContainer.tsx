@@ -1,13 +1,17 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Dimensions } from "react-native";
 import tw from "../../lib/tailwind";
 
 type Props = { children: React.ReactNode };
 
+const deviceWidth = Dimensions.get("window").width;
+
 const NumberContainer = ({ children }: Props) => {
 	return (
 		<View
-			style={tw`border-4 border-accent-500 rounded-md p-6 m-6 items-center justify-center`}
+			style={tw.style(
+				`border-4 border-accent-500 rounded-md m-6 items-center justify-center p-6`,
+			)}
 		>
 			<Text style={tw`text-accent-500 text-4xl font-bold`}>
 				{children}

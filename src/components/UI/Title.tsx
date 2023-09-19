@@ -9,7 +9,7 @@ type Props = {
 const Title = ({ children }: Props) => {
 	return (
 		<Text
-			style={tw`text-2xl font-bold text-white text-center border-2 border-white p-3`}
+			style={tw`text-2xl font-bold text-white text-center border-2 border-white p-3 landscape:sm:w-1/2 mx-auto`}
 		>
 			{children}
 		</Text>

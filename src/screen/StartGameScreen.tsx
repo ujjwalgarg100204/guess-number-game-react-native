@@ -35,7 +35,7 @@ const StartGameScreen = ({ onPickNumber }: Props) => {
 	const resetInputHandler = () => setEnteredNum("");
 
 	return (
-		<View style={tw`flex-1 mt-28 items-center`}>
+		<View style={tw`flex-1 portrait:mt-28 landscape:mt-8 items-center`}>
 			<Title>Guess My Number</Title>
 			<Card>
 				<InstructionText>Enter a Number</InstructionText>

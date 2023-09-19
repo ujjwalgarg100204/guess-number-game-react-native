@@ -6,6 +6,7 @@
 		"tw=\"([^\"]*)", // <div tw="..." />
 		"tw={\"([^\"}]*)", // <div tw={"..."} />
 		"tw\\.\\w+`([^`]*)", // tw.xxx`...`
+		"tw.style(`([^`]*)", // tw.style`...`
 		"tw\\(.*?\\)`([^`]*)" // tw(Component)`...`
 	],
 	"editor.quickSuggestions": {

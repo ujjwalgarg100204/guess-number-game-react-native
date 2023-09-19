@@ -7,8 +7,10 @@ import { useCallback, useState } from "react";
 import GameScreen from "./src/screen/GameScreen";
 import GameOverScreen from "./src/screen/GameOverScreen";
 import { useFonts } from "expo-font";
+import { useDeviceContext } from "twrnc";
 
 export default function App() {
+	useDeviceContext(tw);
 	const [userNumber, setUserNumber] = useState<number | null>(null);
 	const [gameIsOver, setGameIsOver] = useState<boolean>(true);
 	const [rounds, setRounds] = useState<null | number>(null);
