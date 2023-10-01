@@ -36,7 +36,7 @@
 <div align="center">
   <a href="#">
     <img
-      src="./icon.png"
+      src="./assets/icon.png"
       alt="Logo"
       width="80"
       height="80"
